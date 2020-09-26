@@ -1,0 +1,81 @@
+/* Font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap');
+
+h1,h2{
+    font-family:'Bebas Neue', cursive;
+}
+h3,p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+/* Section styles */
+body{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Item Styles */
+
+h1{
+    flex-basis: 100%;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+
+/* class styles */
+
+.section{
+    align-self: center;
+    
+}
+
+.header_{
+    background: cadetblue;
+    width: 100%;
+}
+
+.projects{
+    background-color: aqua;
+    padding: 1em;
+}
+
+.contact-me{
+    background-color: grey;
+}
+
+.footer_{
+    text-align: center;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.a_project img{
+    flex-basis: 100%;
+    width: 100%;
+}
