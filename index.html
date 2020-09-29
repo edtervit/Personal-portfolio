@@ -6,55 +6,200 @@
     <title>Ed Tervit - Web Developer</title>
     <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdb215410e.js" crossorigin="anonymous"></script>
     <meta name="description" content="Web developer, Ed Tervit's portfolio website">
 </head>
 <body>
     
-    <header class="section header_">
-        <nav>
-            <h1 class="website-title">Ed Tervit <br> Web Developer</h1>
+    <header id="home" class=" header_">
+        <nav id="header_nav" class="header_nav">
+            <h1 class="website-title">Ed Tervit</h1>
+            
+            <label class="menutitle" for="open_dropdown"><i class="material-icons md-48">menu</i><br> Menu</label>
+            <input type="checkbox" name="open_dropdown" id="open_dropdown" hidden>
+            <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#home">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects">
+                            <p>Projects</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills">
+                            <p>Skills</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-me">
+                            <p>Contact Me!</p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>    
         </nav>
         
     </header>
 
+
     <main class="section">
+
         <section class="hello">
             <h2>Hello! I'm Ed.</h2>
+            <h3>Web Developer, Programmer and sometimes Photographer</h3>
+            <img class="portrait" src="/images/bw-me.jpg" alt="Portrait of man wearing all black sat on chair in photography studio">
         </section>
+        
 
-        <section class="projects">
+
+        <section id="projects" class="projects">
             <h2 class="projects-title">Projects</h2>
             <ul class="projects-list">
                 <li class="a_project">
-                    <h3><a href="projects/project-1/index.html">Project 1</a></h3>
-                    <a href="projects/project-1/index/html"><img src="images/project1.jpg" alt="Image preview of project 1"> </a>
+                    <h3>One Page Site</h3>
+                    
+                    <ul class="proj_links">
+                        <li class="proj_links_code">
+                            <p><a target="_blank" href="https://github.com/edtervit/techdegree-project-2">View Code</a></p>
+                            <a target="_blank" href="https://github.com/edtervit/techdegree-project-2"><i class="fas fa-file-code fa-2x"></i></a>
+                        </li>
+                        <li class="proj_links_code">
+                            <p><a target="_blank" href="pages/one_page_site/index.html">View Site</a></p>
+                            <a target="_blank" href="pages/one_page_site/index.html"><i class="fas fa-eye fa-2x"></i></a>
+                        </li>
+                    </ul>    
+                    
+                    <div class="proj_info">
+                        <p>Compatibility: Mobile, Tablet and Computer</p>
+                        <p> Creation date: September 2020</p>
+                    </div>
+
+                    <img class="project_img" src="images/project-2.png" alt="Image preview of project 2"> 
+
                 </li>
+
+
                 <li class="a_project">
-                    <h3><a href="projects/project-2/index.html">Landing page</a></h3>
-                    <a href="projects/project-2/index/html"><img src="images/project-2.png" alt="Image preview of project 2"> </a>
+
+                    <h3>Newsletter Signup Form </h3>
+
+                    <ul class="proj_links">
+                        <li class="proj_links_code">
+                            <p><a target="_blank" href="https://github.com/edtervit/techdegree-project-3">View Code</a></p>
+                            <a target="_blank" href="https://github.com/edtervit/techdegree-project-3"><i class="fas fa-file-code fa-2x"></i></a>
+                        </li>
+                        <li class="proj_links_code">
+                            <p><a target="_blank" href="pages/one_page_site/index.html">View Site</a></p>
+                            <a target="_blank" href="pages/one_page_site/index.html"><i class="fas fa-eye fa-2x"></i></a>
+                        </li>
+                    </ul>    
+
+                    <div class="proj_info">
+                        <p>Compatibility: Mobile, Tablet and Computer</p>
+                        <p> Creation date: September 2020</p>
+                    </div>
+
+                    <img class="project_img" src="images/project-3.png" alt="Image preview of project 3"> 
                 </li>
+
                 <li class="a_project">
-                    <h3><a href="projects/project-3/index.html">Web Form</a></h3>
-                    <a href="projects/project-3/index/html"><img src="images/project-3.png" alt="Image preview of project 3"> </a>
+
+                    <h3>Task Automation with Python</h3>
+                    <p class="proj_desc">I have wrote several programs in python that automate daily business tasks saving the business 3+ hours a day of work.</p>
+                    
+
+                    <ul class="proj_links">
+                        <li class="proj_links_code">
+                            <p><a target="_blank" href="https://github.com/edtervit/Web-Scraper-and-Data-analyser">View Code</a></p>
+                            <a target="_blank" href="https://github.com/edtervit/Web-Scraper-and-Data-analyser"><i class="fas fa-file-code fa-2x"></i></a>
+                        </li>
+                    </ul>    
+                    
+                    <div class="proj_info">
+                        <p><p>Example program collects data from website, cross references the data with excel spreadsheet, analyses the data and sends SMS to user if match is found.</p></p>
+                        <p> Creation date: August 2020</p>
+                    </div>
+
+    
                 </li>
             </ul>
         </section>
         
+        <section id="skills" class="skills section">
+
+            <h2 class="contact-me-title">Skills</h2>
+
+            <ul class="skills-list">
+                <li class="a_skill">
+                    <i class="fab fa-python fa-2x"></i>
+                    <p>Python</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fab fa-wordpress fa-2x"></i>
+                    <p>Wordpress</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fab fa-html5 fa-2x"></i>
+                    <p>HTML</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fab fa-css3-alt fa-2x"></i>
+                    <p>CSS</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fab fa-js-square fa-2x"></i>
+                    <p>Javascript</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fas fa-mobile fa-2x"></i>
+                    <p>Mobile first development</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fas fa-universal-access fa-2x"></i>
+                    <p>Accessibility (WCAG)</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fab fa-github fa-2x"></i>
+                    <p>Git/Gitub</p>
+                </li>
+                <li class="a_skill">
+                    <i class="fab fa-aws fa-2x"></i>
+                    <p>AWS</p>
+                </li>
+                
+            </ul> 
+            
+        </section>
+    
+        
         
 
-        <section class="contact-me">
+        <section id="contact-me" class="contact-me">
             <h2 class="contact-me-title">Contact Me</h2>
 
-            <ul class="contact">
-                <li>
-                    <h3><a href="mailto:edtervit@hotmail.co.uk"></a>edtervit@hotmail.co.uk</h3>
-                </li>
-                <li><a href="mailto:edtervit@hotmail.co.uk"><img src="images/mail-outline.svg" alt="email icon"></a></li>
-            </ul>
+            <wrap class="contact">
+                <a href="mailto:edtervit@hotmail.co.uk"><div class="contact-item">
+
+                    <i class="material-icons md-48 ">mail</i>
+                    <h3>edtervit@hotmail.co.uk</h3>
+
+                </div> </a>
+                <div class="contact-item">
+                    <i class="material-icons md-48">phone </i>
+                    <h3>07722593419</h3>
+                </div>
+                
+            </wrap>
         </section>
     </main>
 
     <footer class="section footer_">
+        <h3 class="back_to_top"><a href="#home">Back to top</a></h3>
         <p class="copyright">&copy;Copyright Ed Tervit 2020</p>
     </footer>
 </body>
