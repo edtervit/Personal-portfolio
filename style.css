@@ -40,7 +40,7 @@ body{
 }
 
 .header_{
-    /* padding: 3em 0; */
+    
     background: #F2994A;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -98,7 +98,6 @@ nav{
 /* Item Styles */
 
 h1{
-    flex-basis: 100%;
     font-size: 4em;
     text-align: center;
 }
@@ -153,7 +152,6 @@ nav label{
     height: 0px;
     opacity: 0;
     transition: 0.5s;
-    
 }
 
 #open_dropdown:checked ~ .nav-links{
@@ -248,6 +246,7 @@ nav label{
     padding: 1em 1em;
     align-self: center;
     max-width: 900px;
+    
 }
 
 .a_skill{
@@ -261,7 +260,7 @@ nav label{
 }
 
 .skill_h3{
-    padding: 1em 0;
+    padding: 3em 0 1em 0em;
 }
 
 /* Contact me */
@@ -302,4 +301,105 @@ nav label{
 /* Media Queries  */
 
 
+@media (min-width:768px){
 
+    .menutitle{
+        display: none;
+    }
+
+    .header_{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 1em 1em;       
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header_nav{
+        
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+
+    .nav-links{
+        width: 100%;
+        height: 100%;
+        max-width: 700px;
+        opacity: 1;
+        transition: 0.5s;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+
+    .hello{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .hello_title{
+        align-self: center;
+        padding: 2em;
+    }
+
+    .projects{
+        width: 100%;
+        padding: 2em 5em;
+
+    }
+
+    .a_project{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        flex-basis: 50%;
+        height: 100%;
+        justify-content: space-between;
+        
+        flex-wrap: wrap;
+        
+    }
+
+    .a_text_only_project{
+        max-width: 500px;
+    }
+
+    .projects-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-self: center;
+        align-content:center ;
+      
+    }
+
+    h3{
+        font-size: 1.3em;
+    }
+
+   
+}
+
+@media (min-width:1080px){
+
+    .nav-item{  
+        font-size: 1em;  
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    .skills-list{
+        border: dashed 3px white;
+        border-radius: 50px;
+    }
+
+}
