@@ -1,0 +1,343 @@
+/* Font Family */
+
+@font-face{
+    font-family: "Quicksand";
+    src: url(../Fonts/Quicksand-Regular.ttf) format('truetype');
+}
+
+
+*{
+    font-family: "Quicksand", serif;
+    box-sizing: border-box;
+}
+
+a{
+
+    text-decoration:inherit;
+    color: inherit;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+body{
+    margin:0 0;
+    background-color: #add8e6;
+    text-align: center;
+    
+
+}
+
+h1{
+    color: white;
+    margin-top: 5%;
+    font-size: 3.5em;
+
+}
+
+h2{
+    text-transform: uppercase;
+    margin: 0 0;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+ul{
+
+    padding:0;
+    margin: 0 0 ;
+}
+
+nav{
+    text-align: center;
+    margin: 0 0.5em;
+    margin-bottom: 2em;
+}
+
+nav li{
+    padding: 0.5em;
+    margin: 00.4em;
+    display: block;
+    background-color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    
+}
+
+nav li:hover{
+    
+    background-color:lightblue;
+    color: white;
+    outline: 1px white solid;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.portfolio{
+    text-align: center;
+    background: white;
+    padding-top:2em;
+    width: 100%;
+    
+}
+
+img{
+
+    max-width: 100%;
+}
+
+.me{
+    border-radius: 50%;
+    height: 250px;
+    border: white 2px solid;
+    
+
+}
+
+.me:hover{
+    transition: 0.5s;
+    transform: rotate(360deg);
+    
+
+}
+
+.about{
+    background-color: #fafafa;
+    padding-top: 40px;
+
+}
+
+.bold{
+
+    font-weight: bold;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.intro{
+    padding: 1em;
+
+}  
+
+.item{
+    padding: 1.5em 1.5em;
+}
+
+.section{
+    /* padding-top: 2em; */
+    
+    margin-top: 0em;
+}
+.about_me{
+
+    padding: 0em 1em;
+
+}
+
+.breaker{
+    
+    margin: 0 auto;
+    width: 85%;
+    border: solid 1px  #8ac7db;
+    background-color: transparent;
+    
+}
+
+.location{
+    padding: 2em 1.5em;
+    background-color: #fafafa;
+
+}
+
+.Contact{
+    padding: 2em 0;
+}
+
+.map{
+    padding: 1em;
+    max-height: 600px;
+}
+
+.bottom_nav{
+    display: none;
+}
+
+.bottom_title{
+    display: none;
+}
+
+.mobile_nav li{
+    
+    margin: 1em auto;
+    display: inline-block;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 2em;
+
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px){
+
+    .item{
+        padding: 1.2em 1.2em;
+    }
+    nav li{
+
+        display: inline-block;
+        background-color: lightblue;
+    }
+    .me{
+
+        float:right;
+        width: auto;
+        height: 400px;
+        border-radius: 50%;
+        margin-left: 3em;
+        margin-right: 20%;
+
+    }
+    .about{
+        
+        padding: 1.5em 1em;
+
+    }
+    .about p{
+        text-align: center;
+        font-size: 1.5em ;
+        margin-right: 2em;
+        padding-right: 5em;
+        
+    }
+    .porty{
+        margin-bottom: 2em;
+    }
+    .item{
+
+        float: left;
+        width: 50%;
+    }
+  
+    .item p{
+        padding:0em 5%;
+        font-size: 1.4em;
+    }  
+
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+   
+    .about_me{
+        padding: 0 1.5em;
+
+    }
+
+    .map{
+
+        max-width: 50%;
+    }
+    .mobile_nav{
+        display: none;
+    }
+    .bottom_nav{
+        display: inline-block;
+        float: right;
+        margin-right: 2.3em;
+        margin-bottom: 5em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .web_nav{
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+    .bottom_nav li{
+        margin-right: 2em;
+        display: inline-block;
+    }
+    .bottom_title{
+        
+        float: left; 
+        display: inline-block;
+        margin-left: 4.2em;
+        margin-bottom: 5em;
+        
+        
+        
+    }   
+    .intro{
+        padding: 5em;
+        
+    }  
+    .bug{
+        border: red 1px solid;
+    }
+    .bug2{
+        border: green 1px solid;
+    }
+    .portfolio p{
+        max-height: 180px;
+        
+    }
+
+}
+
+@media (min-width: 1024px){
+    .container{
+        margin: 0 auto;
+        max-width: 1120px;
+    }
+    .item{
+
+        float: left;
+        width: 33%;
+    }
+    .name{
+        float:left;
+        margin-bottom: 0em;
+    }
+    nav{
+        float:right;
+    }
+    h1{
+        margin-top: 0em;
+    }
+    .top{
+        
+        margin: 3em 5em;
+    }
+    nav li{
+        margin: 0 0;
+    }
+    .portfolio p{
+        height: 180px;
+    }
+    .home{
+        margin-bottom: 35px;
+    }
+}
+
