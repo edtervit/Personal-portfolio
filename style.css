@@ -59,9 +59,11 @@ nav{
 }
 
 .projects{
-    
-    background:linear-gradient(130deg, #a5ff82, #e8ff82) ;
+    color: white;
+    background: linear-gradient(55deg,#107E7D, #10527e);
     padding: 2em 0;
+    border-bottom: 5px white solid;
+    
 }
 
 .skills{
@@ -102,7 +104,7 @@ h1{
 }
 
 h2{
-    font-size: 2.7em;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -162,7 +164,6 @@ nav label{
     height: 100%;
     width: 100%;
 }
-
 
 
 /*  */
@@ -244,7 +245,7 @@ nav label{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    padding: 0 1em;
+    padding: 1em 1em;
     align-self: center;
     max-width: 900px;
 }
@@ -252,6 +253,15 @@ nav label{
 .a_skill{
     padding: 1em 0;
     flex-basis: 33.3%;
+    
+}
+
+.a_skill i {
+    
+}
+
+.skill_h3{
+    padding: 1em 0;
 }
 
 /* Contact me */
