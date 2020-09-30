@@ -135,6 +135,7 @@ nav label{
     color: white;
 }
 
+
 .nav-item{
     
     flex-basis: 100%;
@@ -151,14 +152,28 @@ nav label{
 
 /* nav bar open and close */
 
-.nav-links{
+#open_dropdown:not(:target) ~ .nav-links{
     width: 0px;
     height: 0px;
     opacity: 0;
     transition: 0.5s;
 }
 
-#open_dropdown:checked ~ .nav-links{
+#open_dropdown:not(:target) ~ .menutitle2{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#open_dropdown:not(:target) ~ .menutitle{
+    text-align: center;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#open_dropdown:target ~ .nav-links{
     
     flex-basis: 100%;
     text-align: center;
@@ -167,6 +182,18 @@ nav label{
     width: 100%;
 }
 
+#open_dropdown:target ~ .menutitle{
+    text-align: center;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.menutitle2{
+    color: white;
+}
+
+#ope
 
 /*  */
 /* Main class styles */
