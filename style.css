@@ -402,10 +402,10 @@ nav label{
         display: flex;
         flex-direction: column;
         align-self: center;
-        flex-basis: 50%;
+        flex-basis: 40%;
         height: 100%;
-        justify-content: space-between;
-        
+        justify-content: center;
+        padding: 1em 2rem;
         flex-wrap: wrap;
         
     }
