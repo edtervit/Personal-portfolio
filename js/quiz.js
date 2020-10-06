@@ -25,6 +25,9 @@ document.getElementById("js").onclick = function(){
     if (questionOne.toUpperCase() === questionOneAnswer.toUpperCase()){
         score += 1;
     } 
+    else if (questionOne.toUpperCase() === "PONY"){
+        score += 1;
+    } 
 
     questionTwo = prompt("2. Fill in the blank: 'I'll press the ... button' ");
     const questionTwoAnswer = "red"
@@ -32,7 +35,7 @@ document.getElementById("js").onclick = function(){
         score += 1;
     } 
 
-    questionThree = prompt("3. Fill in the blank: 'Jamie Jackson once ate ... sulphate' ");
+    questionThree = prompt("3. Fill in the blank: 'Benn Basham once ate ... sulphate' ");
     const questionThreeAnswer = "copper"
     if (questionThree.toUpperCase() === "COPPER"){
         score += 1;
