@@ -296,10 +296,6 @@ nav label{
     padding: 2em 0 2em 0em;
 }
 
-.skill_h3:not(:first-of-type){
-
-    padding: 5em 0 2em 0em;
-}
 
 /* Contact me */
 
@@ -434,6 +430,10 @@ nav label{
 
     .menutitle2{
         display: none;
+    }
+
+    .skill_h3:not(:first-of-type){
+        padding: 5em 0 2em 0em;
     }
 }
 
