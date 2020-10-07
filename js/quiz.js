@@ -35,7 +35,7 @@ document.getElementById("js").onclick = function(){
         score += 1;
     } 
 
-    questionThree = prompt("3. Fill in the blank: 'Benn Basham once ate ... sulphate' ");
+    questionThree = prompt("3. Fill in the blank: 'Benn B once ate ... sulphate' ");
     const questionThreeAnswer = "copper"
     if (questionThree.toUpperCase() === "COPPER"){
         score += 1;
@@ -61,7 +61,7 @@ document.getElementById("js").onclick = function(){
         alert(`
         The answer to question 1 was 'Feed the ${questionOneAnswer}' and you said 'Feed the ${questionOne}'.
         The answer to question 2 was 'I'll press the ${questionTwoAnswer} button' and you said 'I'll press the ${questionTwo} button'.
-        The answer to question 3 was 'Jamie Jackson once ate ${questionThreeAnswer} sulphate' and you said 'Jamie Jackson once ate ${questionThree} sulphate'.
+        The answer to question 3 was 'Benn B once ate ${questionThreeAnswer} sulphate' and you said 'Benn B once ate ${questionThree} sulphate'.
         The answer to question 4 was 'Id be taller than all of you if I stood on my ${questionFourAnswer}' and you said 'Id be taller than all of you if I stood on my ${questionFour}'.
         The answer to question 5 was '${questionFiveAnswer} WHERE DID YOU FIND HIM?' and you said '${questionFive} WHERE DID YOU FIND HIM?'.
         Thanks for playing!
